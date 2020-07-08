@@ -1,0 +1,30 @@
+.Row{
+    height: 100px;
+    width: 302px;
+}
+.BorderBottom{
+    border-bottom: 1px solid rgb(197, 195, 195);
+}
+.BorderRight{
+    border-right: 1px solid rgb(197, 195, 195);
+}
+.Col {
+    height: 100px;
+    width: 100px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+
+@media(max-width: 500px) {
+    .Row{
+        height: 50px;
+        width: 152px;
+    }
+    .Col{
+        height: 50px;
+        width: 50px;
+        line-height: 1;
+    }
+}
