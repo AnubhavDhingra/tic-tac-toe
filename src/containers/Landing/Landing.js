@@ -23,7 +23,7 @@ class Landing extends Component {
                 </div>
                 <div className={classes.ButtonGroup}>
                     <button className={classes.Button}
-                        onClick={() => this.handleClick('A')}>With AI</button>
+                        >With AI</button>
                     <button className={classes.Button}
                         onClick={() => this.handleClick('F')}>With a Friend</button>
                 </div>

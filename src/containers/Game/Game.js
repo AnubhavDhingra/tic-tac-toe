@@ -39,7 +39,12 @@ class Game extends Component {
         const winner = calculateWinner(this.state.squares);
         let status;
         if (winner) {
-            status = (<h3>Winner: {winner}</h3>);
+            status = (
+            <React.Fragment>
+                <span style={{cursor: 'pointer'}} onClick={this.resetBoard}>Reset Board</span>
+                <h3>Winner: {winner}</h3>
+            </React.Fragment>
+            );
         } else if(!this.state.squares.includes(null)) {
             status = (<span onClick={this.resetBoard}>Reset Board</span>);
         } 
